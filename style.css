@@ -9,7 +9,7 @@
     --text-color: #bfc3ba;
 }
 html {
-    font-size: 10px;
+    font-size: 14px;
 }
 body {
     font-family: 'Roboto';
@@ -63,36 +63,17 @@ a {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
 }
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 100%;
-        grid-template-columns: 1fr;
-        padding: 3rem;
-        gap: 7rem;
-    }
-    .profile-container {
-        flex-direction: column;
-    }
-    hr{
-        margin: 0 auto;
-    }.group-3{
-        flex-direction: column;
-    }
-    .profile{
-        margin-bottom: 0;
-    }
-
-}
 .profile {
     grid-column: 1 / -1;
     margin-bottom: 2rem;
 }
-.group-1, .group-2{
+.group-1,
+.group-2 {
     display: flex;
     flex-direction: column;
     gap: 5rem;
 }
-.group-3{
+.group-3 {
     max-width: 700px;
     width: 100%;
     margin: 0 auto;
@@ -101,7 +82,7 @@ a {
     flex-direction: row;
     gap: 5rem;
 }
-.group-3>div{
+.group-3 > div {
     flex: 1;
 }
 /* profile */
@@ -141,10 +122,10 @@ a {
 .edu-item {
     margin-top: 2rem;
 }
-.certification-item{
+.certification-item {
     margin-top: 2rem;
 }
-.exp-item{
+.exp-item {
     margin-top: 2rem;
 }
 /* interest */
@@ -155,7 +136,7 @@ a {
     flex-wrap: wrap;
     gap: 2rem;
 }
-.interst-item {
+.interest-item {
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -175,24 +156,47 @@ a {
     margin-top: 1.5rem;
     font-size: 1.5rem;
     display: flex;
-    gap: .5rem;
+    gap: 0.5rem;
     align-items: center;
     justify-content: flex-start;
     color: var(--text-color);
 }
-.social-item:hover{
+.social-item:hover {
     color: var(--primary-color);
 }
 .social-item svg {
     width: 2rem;
 }
-hr{
+hr {
     grid-column: 1/-1;
-    
+
     width: 80%;
     margin: 0 auto;
     margin-top: 5rem;
     margin-bottom: 1rem;
     border: none;
-    border-top: 2px solid gray
+    border-top: 2px solid gray;
+}
+@media only screen and (max-width: 768px) {
+    * {
+        box-sizing: content-box;
+    }
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+    .profile-container {
+        flex-direction: column;
+    }
+    hr {
+        margin: 0 auto;
+    }
+    .group-3 {
+        flex-direction: column;
+    }
+    .profile {
+        margin-bottom: 0;
+    }
 }
